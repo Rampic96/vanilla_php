@@ -98,14 +98,17 @@ class Novato
     public function getStats()
     {
         $datos=[
+            "nombre" => $this->nombre,
+            "perfil" => $this->perfil,
             "vida" => $this->vida,
-            "velocidad " => $this->velocidad,
+            "velocidad" => $this->velocidad,
             "nivel" => $this->nivel,
             "dano" => $this->dano,
             "mana" => $this->mana,
             "defensa" => $this->defensa,
             "defensa_esp" => $this->defensa_esp,
-            "dano_esp" => $this->dano_esp
+            "dano_esp" => $this->dano_esp,
+            "habilidades" => $this->habs
         ];
         return $datos;
     }
@@ -196,15 +199,7 @@ class Guerrero extends Novato
 
 }
 
-$Warrior=new Guerrero("Ramiro","");
-$Warrior->levelUp();
-$Warrior->levelUp();
-$Warrior->levelUp();
-$Warrior->levelUp();
-$Warrior->levelUp();
-$Warrior->levelUp();
-$Warrior->ShowStats();
-print_r($Warrior->getSkill());
+
 
 
 
